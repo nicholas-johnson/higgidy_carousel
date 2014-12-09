@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Carousel Demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.4/angular.min.js"></script>
+    <script src="./dist/simple_carousel.js"></script>
+    <link rel="stylesheet" type="text/css" href="./dist/simple_carousel.css">
+    <script>
+      angular.module("app", ['HiggidyCarousel'])
+        .controller('appController', function($scope) {
+          $scope.images = [
+            {
+              src: "./images/higgidy_1.jpg",
+              alt: "image 1",
+              link: "http://www.higgidy.co.uk"
+            },
+            {
+              src: "./images/higgidy_2.jpg",
+              alt: "image 2",
+              link: "http://www.higgidy.co.uk"
+            },
+            {
+              src: "./images/higgidy_3.jpg",
+              alt: "image 3",
+              link: "http://www.higgidy.co.uk"
+            },
+            {
+              src: "./images/higgidy_3.jpg",
+              alt: "image 3",
+              link: "http://www.higgidy.co.uk"
+            }
+          ]
+        });
+    </script>
+  </head>
+  <body ng-app="app" ng-controller="appController">
+    <div higgidy-carousel='images' timeout="3000">
+      <ul higgidy-carousel-images>
+        <li ng-repeat="image in images">
+          <a href="{{image.link}}">
+            <img ng-src="{{image.src}}" alt="{{img.alt}}" />
+          </a>
+        </li>
+      </ul>
+      <nav class="links">
+        <ul>
+          <li ng-repeat="image in images">
+            <a href="" ng-click="show($index)" ng-class="{selected: carousel.current == $index}">
+              {{$index}}
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>
