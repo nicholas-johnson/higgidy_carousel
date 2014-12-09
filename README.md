@@ -1,26 +1,48 @@
 # simple_carousel [![Build Status](https://secure.travis-ci.org/forwardadvance/simple_carousel.png?branch=master)](http://travis-ci.org/forwardadvance/simple_carousel)
 
-The best project ever.
+A really simple Angular image carousel.
 
 ## Getting Started
-Install the module with: `npm install simple_carousel`
 
-```javascript
-var simple_carousel = require('simple_carousel');
-simple_carousel.awesome(); // "awesome"
-```
+    $scope.images = [];
 
-## Documentation
-_(Coming soon)_
+    <div higgidy-carousel='images' timeout="3000">
+      <ul higgidy-carousel-images>
+        <li ng-repeat="image in images">
+          <a href="{{image.link}}">
+            <img ng-src="{{image.src}}" alt="{{img.alt}}" />
+          </a>
+        </li>
+      </ul>
+      <nav class="links">
+        <ul>
+          <li ng-repeat="image in images">
+            <a href="" ng-click="show($index)" ng-class="{selected: carousel.current == $index}">
+              {{$index}}
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
 
 ## Examples
-_(Coming soon)_
 
-## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
+<http://www.higgidy.co.uk>, or just view the project index file.
+
+## Building
+
+build with:
+
+    grunt build
+
+watch with
+
+    grunt watch
 
 ## Release History
-_(Nothing yet)_
+
+2014-12-09 - First release
 
 ## License
 Copyright (c) 2014 Nicholas Johnson  
