@@ -148,6 +148,6 @@ module.exports = function(grunt) {
   grunt.registerTask('build', ['jshint', 'concat', 'ngAnnotate', 'uglify', 'sass', 'autoprefixer', 'cssmin']);
 
   // Default task.
-  grunt.registerTask('default', ['jshint', 'nodeunit', 'concat', 'ngAnnotate', 'uglify']);
+  grunt.registerTask('default', ['build', 'watch']);
 
 };

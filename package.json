@@ -1,26 +1,26 @@
 {
-  "name": "simple_carousel",
-  "description": "A really simple Angular image carousel",
-  "version": "0.1.0",
-  "homepage": "https://github.com/forwardadvance/simple_carousel",
+  "name": "higgidy_carousel",
+  "description": "A simple to implement and integrate Angular image carousel, built with sensible CSS.",
+  "version": "0.1.1",
+  "homepage": "https://github.com/forwardadvance/higgidy_carousel",
   "author": {
     "name": "Nicholas Johnson",
     "email": "nicholas@forwardadvance.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/forwardadvance/simple_carousel.git"
+    "url": "https://github.com/forwardadvance/higgidy_carousel.git"
   },
   "bugs": {
-    "url": "https://github.com/forwardadvance/simple_carousel/issues"
+    "url": "https://github.com/forwardadvance/higgidy_carousel/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/forwardadvance/simple_carousel/blob/master/LICENSE-MIT"
+      "url": "https://github.com/forwardadvance/higgidy_carousel/blob/master/LICENSE-MIT"
     }
   ],
-  "main": "lib/simple_carousel",
+  "main": "lib/higgidy_carousel",
   "engines": {
     "node": ">= 0.8.0"
   },

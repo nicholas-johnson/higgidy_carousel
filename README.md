@@ -4,6 +4,10 @@ A really simple Angular image carousel.
 
 ## Getting Started
 
+A basic carousel will look something like this. 
+
+Ensure you have an object called images in $scope. You are of course free to modify the html as you see fit. The only requirement is that you have a list of images in the higgidy-carousel-images directive.
+
     $scope.images = [];
 
     <div higgidy-carousel='images' timeout="3000">
@@ -32,13 +36,14 @@ A really simple Angular image carousel.
 
 ## Building
 
+watch the project with the default grunt task. Livereload is enabled and will work with the livereload plugin.
+
+    grunt
+
 build with:
 
     grunt build
 
-watch with
-
-    grunt watch
 
 ## Release History
 
