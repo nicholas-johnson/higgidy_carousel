@@ -1,6 +1,6 @@
 /**
  * A simple to implement and integrate Angular image carousel, built with sensible CSS.
- * @version v0.1.1 - 2014-12-18
+ * @version v0.1.1 - 2015-01-20
  * @link https://github.com/forwardadvance/higgidy_carousel
  * @author Nicholas Johnson - nicholas@forwardadvance.com
  * @license MIT License, http://www.opensource.org/licenses/MIT
@@ -13,8 +13,7 @@ angular.module('HiggidyCarousel',  [])
     var timeout;
     $scope.carousel = {
       current: 0,
-      max: 0,
-      timeout: 10000
+      max: 0
     };
     $scope.setMax = function() {
       if ($scope.images){

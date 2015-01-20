@@ -6,8 +6,7 @@ angular.module('HiggidyCarousel',  [])
     var timeout;
     $scope.carousel = {
       current: 0,
-      max: 0,
-      timeout: 10000
+      max: 0
     };
     $scope.setMax = function() {
       if ($scope.images){
